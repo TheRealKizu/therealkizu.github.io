@@ -111,11 +111,12 @@
 
 	body {
 		height: 100%;
-		background-color: #ffffff;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		/* background-color: #ffffff; */
+		background: #121212;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("https://source.unsplash.com/random");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("https://source.unsplash.com/random");
 		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("https://source.unsplash.com/random");
 		background-repeat: repeat,			no-repeat,			no-repeat;
 		background-size: 100px 100px, cover,				cover;
 		background-position: top left,		center center,		bottom center;
@@ -132,7 +133,8 @@
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
-			background-color: #ffffff;
+			/* background-color: #ffffff; */
+			background: #121212;
 			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
 			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
 			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
@@ -208,13 +210,18 @@
 	}
 
 	p {
+		color: #f1f1f1;
+		font-weight: 700;
 		margin: 0 0 1.5em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		/* color: #313f47; */
+		color: #f1f1f1;
+		font-weight: 800;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
+
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -541,7 +548,7 @@
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+			/* font-weight: 400; */
 		}
 
 		.icon > .label {
@@ -551,11 +558,7 @@
 		.icon:before {
 			line-height: inherit;
 		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
+ 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
@@ -776,6 +779,7 @@
 
 				ul.icons li a:before {
 					color: #ffffff;
+					color: #191919;
 					text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 				}
 
@@ -914,7 +918,7 @@
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
 		padding: 4.5em 3em 3em 3em ;
-		background: #ffffff;
+		background: #131313;
 		border-radius: 4px;
 		cursor: default;
 		max-width: 100%;
@@ -922,19 +926,23 @@
 		position: relative;
 		text-align: center;
 		width: 27em;
+		border-radius: 30px;
 	}
 
 		#main .avatar {
+			background: #131313;
 			position: relative;
 			display: block;
 			margin-bottom: 1.5em;
 		}
 
 			#main .avatar img {
+				background: #131313;
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #ffffff;
+				box-shadow: 0 0 0 1.5em #121212;
+				
 			}
 
 			#main .avatar:before {
@@ -946,17 +954,20 @@
 				width: calc(100% + 6em);
 				height: 1px;
 				z-index: -1;
-				background: #c8cccf;
+				/* background: #c8cccf; */
+				background: #121212;
 			}
 
 		@media screen and (max-width: 480px) {
 
 			#main {
+				background: #131313;
 				padding: 4em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
 				#main .avatar:before {
+					background: #131313;
 					left: -2em;
 					width: calc(100% + 4em);
 				}
@@ -989,6 +1000,7 @@
 			margin: 0;
 			padding: 0;
 			font-size: 0.9em;
+			font-weight: 500;
 			list-style: none;
 		}
 
