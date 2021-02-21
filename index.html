@@ -49,12 +49,22 @@
 					date: 1
 				}
 
+				var valentines = {
+					month: 2,
+					date: 14
+				}
+
+				var now = new Date();
+
 				function isItAprilFoolDay() {
-					var now = new Date();
 					return (now.getMonth() == aprilFools.month && now.getDate() == aprilFools.date);
 				}
 
-				if(isItAprilFoolDay()){
+				function isItValetinesDay() {
+					return (now.getMonth() == valentines.month && now.getDate() == valentines.date);
+				}
+
+				if (isItAprilFoolDay() || isItValetinesDay()){
 					window.location.replace('/rick-roll.html');
 				} else {
 					console.log('Initializing Metasploit v3.0.21')
