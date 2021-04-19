@@ -23,7 +23,7 @@ p #prompt {
 }
 
 p #cursor {
-    background-color: whitesmoke;
+    background-color: white;
     animation: blink 1s infinite;
 }
 
