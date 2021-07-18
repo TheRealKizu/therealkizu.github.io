@@ -47,5 +47,21 @@
             </p>
         </div>
         <p><span id="prompt">[root@kizucf ~]$ </span><span id="cursor">_</span></p>
+
+        <script>
+            // Check if user is on mobile
+            function isMobile() {
+                // Use regex
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    return true;
+                }
+
+                return false;
+            }
+
+            if (isMobile()) {
+                window.location.replace("https://www.youtube.com/watch?v=yPYZpwSpKmA")
+            }
+        </script>
     </body>
 </html>
